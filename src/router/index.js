@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import UsuariosView from '@/views/usuarios/UsuariosView'
 import TarefasView from '@/views/tarefas/TarefasView'
+import AtividadesView from '@/views/atividades/AtividadesView'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,11 @@ const routes = [
     path: '/tarefas',
     name: 'tarefas',
     component: TarefasView
+  },
+  {
+    path: '/atividades',
+    name: 'atividades',
+    component: AtividadesView
   },
 ]
 
