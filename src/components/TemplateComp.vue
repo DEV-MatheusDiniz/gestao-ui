@@ -1,56 +1,33 @@
 <template>
-  <v-app id="inspire">
-    <v-app-bar app color="white" flat>
-      <v-container class="py-0 fill-height">
-        <v-avatar class="mr-10" color="grey darken-1" size="32">
-          <v-icon dark>
-            mdi-account
-          </v-icon>
-        </v-avatar>
+  <div>
+    <v-app id="inspire">
+      <v-main class="grey lighten-3">
+        <HeaderComp />
 
-        <v-btn v-for="item in links" :key="item.label" text :to="item.link">
-          {{ item.label }}
-        </v-btn>
-
-        <v-spacer></v-spacer>
-
-        <span>Registro de Atividades</span>
-      </v-container>
-    </v-app-bar>
-
-    <v-main class="grey lighten-3">
-      <v-container>
-        <v-row>
-          <v-col>
-            <v-sheet min-height="80vh" rounded="lg">
-              <!--  -->
-            </v-sheet>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-main>
-  </v-app>
+        <v-container>
+          <v-row>
+            <v-col>
+              <v-sheet min-height="90vh" rounded="lg">
+                <RouterView />
+              </v-sheet>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-main>
+    </v-app>
+  </div>
 </template>
 
 <script>
+import HeaderComp from '@/components/HeaderComp'
+
 export default {
   name: 'TemplateComp',
 
-  data: () => ({
-    links: [
-      {
-        label: 'Usuários',
-        link: '/usuarios'
-      },
-      {
-        label: 'Tarefas',
-        link: '/tarefas'
-      },
-      {
-        label: 'Atividades',
-        link: '/atividades'
-      },
-    ],
-  }),
+  components: {
+    HeaderComp,
+  },
+
+  data: () => ({}),
 }
 </script>
