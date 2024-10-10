@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  ui:
+    build:
+      context: .
+    container_name: gestao-ui
+    ports:
+      - "8080:8080"
+    restart: always

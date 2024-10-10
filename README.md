@@ -23,6 +23,12 @@ npm run serve
 npm run build
 ```
 
+## Uso via Docker
+```bash
+# Iniciar ui
+docker compose up
+```
+
 ## Telas
 
 Crud de Usuários
