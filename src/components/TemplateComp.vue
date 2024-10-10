@@ -5,13 +5,7 @@
         <HeaderComp />
 
         <v-container>
-          <v-row>
-            <v-col>
-              <v-sheet min-height="90vh" rounded="lg">
-                <RouterView />
-              </v-sheet>
-            </v-col>
-          </v-row>
+          <RouterView />
         </v-container>
       </v-main>
     </v-app>
