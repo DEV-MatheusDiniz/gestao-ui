@@ -13,8 +13,8 @@
 
       <v-card-text>
         <v-form ref="form">
-          <v-textarea v-model="form.ds_descricao" label="Descrição" :rules="[rules.obrigatorio]" :counter="100"
-            :maxlength="100" rows="3" clear-icon="mdi-close-circle" clearable></v-textarea>
+          <v-textarea v-model="form.ds_descricao" label="Descrição" :rules="[rules.obrigatorio]" counter rows="3"
+            clear-icon="mdi-close-circle" clearable></v-textarea>
 
           <v-select v-model.trim="form.fk_responsavel" :items="responsaveis" item-text="no_nome" item-value="id"
             label="Responsável" :rules="[rules.obrigatorio]" required></v-select>
