@@ -91,7 +91,7 @@ export default {
 
     formatar_data_hora_Local(data_string) {
       // Separar a data e a hora
-      const [datePart, timePart] = data_string.split(' ');
+      const [datePart, timePart] = data_string.split(' - ');
 
       // Separar o dia, mês e ano
       const [day, month, year] = datePart.split('/');
