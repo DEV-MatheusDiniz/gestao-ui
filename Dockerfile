@@ -1,8 +1,6 @@
 # Estágio de compilação
 FROM node:lts-alpine as build-stage
 
-ARG ENVIRONMENT
-
 WORKDIR /app
 
 COPY package*.json ./

@@ -1,5 +1,8 @@
 # Gestão UI
 
+## Acesse
+- http://localhost:8080
+
 Ui para consumir a api de registro de tarefas e horas trabalhadas
 
 ## Sobre o sistema
