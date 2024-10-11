@@ -13,6 +13,8 @@ Ui para consumir a api de registro de tarefas e horas trabalhadas
 ## Requisitos
 - node 18.20.2
 - npm 10.5.0
+- Docker 24.0.7
+- Docker Compose 2.29.4
 
 ## Uso
 ```bash
